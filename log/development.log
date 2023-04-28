@@ -1,0 +1,397 @@
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230428181440)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar NOT NULL, "password" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230428181440"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-04-28 18:21:14.172214"], ["updated_at", "2023-04-28 18:21:14.172214"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-04-28 23:51:28 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 559)
+  Rendered layout layouts/application.html.erb (Duration: 142.2ms | Allocations: 97728)
+Completed 200 OK in 151ms (Views: 145.1ms | ActiveRecord: 0.0ms | Allocations: 104943)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-28 23:51:30 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230428181440)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20230428181440"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230428181440)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (36.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar NOT NULL, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230428181440"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "example@gmail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-04-28 18:26:07.050558"], ["updated_at", "2023-04-28 18:26:07.050558"]]
+  [1m[36mTRANSACTION (42.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-04-29 00:25:53 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1787)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 36724)
+Completed 200 OK in 28ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 43141)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 00:25:55 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_up" for ::1 at 2023-04-29 00:25:57 +0530
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 20.9ms | Allocations: 5442)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 7878)
+Completed 200 OK in 29ms (Views: 23.8ms | ActiveRecord: 0.3ms | Allocations: 25798)
+
+
+Started POST "/sign_up" for ::1 at 2023-04-29 00:26:11 +0530
+Processing by RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"nitesh.krjs@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/registrations_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nitesh.krjs@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:9:in `create'
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "nitesh.krjs@gmail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-04-28 18:56:11.504111"], ["updated_at", "2023-04-28 18:56:11.504111"]]
+  ↳ app/controllers/registrations_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (15.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/registrations_controller.rb:9:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering welcome_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered welcome_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.6ms | Allocations: 239)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.9ms | Allocations: 489)
+  Rendering layout layouts/mailer.text.erb
+  Rendering welcome_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered welcome_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.2ms | Allocations: 172)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.4ms | Allocations: 365)
+WelcomeMailer#welcome_email: processed outbound mail in 9.7ms
+Delivered mail 644c16cb86b1a_485a34bc36629@nitesh-Modern-14-B11MOU.mail (1773.7ms)
+Date: Sat, 29 Apr 2023 00:26:11 +0530
+From: from@example.com
+To: nitesh.krjs@gmail.com
+Message-ID: <644c16cb86b1a_485a34bc36629@nitesh-Modern-14-B11MOU.mail>
+Subject: Welcome to my Website
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_644c16cb85ef2_485a34bc3657";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_644c16cb85ef2_485a34bc3657
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, nitesh.krjs@gmail.com
+  ===============================================
+  You have successfully signed up to example.com,
+  your user email is: nitesh.krjs@gmail.com.
+  To login to the site, just follow this link: http://localhost:3000/sign_in.
+  Thanks for joining and have a great day!
+
+----==_mimepart_644c16cb85ef2_485a34bc3657
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+  <html>
+    <head>
+      <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    </head>
+    <body>
+      <h1>Welcome to example.com, nitesh.krjs@gmail.com</h1>
+      <p>
+        You have successfully signed up to example.com,
+        your user email is: nitesh.krjs@gmail.com.<br>
+      </p>
+      <p>
+        To login to the site, just follow this link: http://localhost:3000/sign_in.
+      </p>
+      <p>Thanks for joining and have a great day!</p>
+    </body>
+  </html>
+  </body>
+</html>
+
+----==_mimepart_644c16cb85ef2_485a34bc3657--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1994ms (ActiveRecord: 15.3ms | Allocations: 75453)
+
+
+Started GET "/" for ::1 at 2023-04-29 00:26:13 +0530
+Processing by WelcomeController#index as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 309)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2644)
+Completed 200 OK in 10ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 4576)
+
+
+Started DELETE "/logout" for ::1 at 2023-04-29 00:26:30 +0530
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `set_current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1077)
+
+
+Started GET "/" for ::1 at 2023-04-29 00:26:30 +0530
+Processing by WelcomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 2427)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2972)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 00:26:32 +0530
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2725)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 5133)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 6258)
+
+
+Started POST "/sign_in" for ::1 at 2023-04-29 00:26:40 +0530
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"nitesh.krjs@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nitesh.krjs@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 170ms (ActiveRecord: 0.1ms | Allocations: 1212)
+
+
+Started GET "/" for ::1 at 2023-04-29 00:26:40 +0530
+Processing by WelcomeController#index as TURBO_STREAM
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 257)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 2459)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 3439)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 00:27:11 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/" for ::1 at 2023-04-29 00:33:19 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1766)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 36743)
+Completed 200 OK in 29ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 43028)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 00:33:22 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 00:33:24 +0530
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 4543)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 6978)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 8218)
+
+
+Started GET "/password/reset" for ::1 at 2023-04-29 00:33:27 +0530
+Processing by PasswordResetsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1636)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 4044)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 5276)
+
+
+Started POST "/password/reset" for ::1 at 2023-04-29 00:33:33 +0530
+Processing by PasswordResetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"nitesh.krjs@gmail.com", "commit"=>"Reset Password"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nitesh.krjs@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:20:in `create'
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 341e1627-c372-4f07-8378-bf5810a17fb2) to Async(default) with arguments: "PasswordMailer", "reset", "deliver_now", {:params=>{:user=>#<GlobalID:0x00007fd4d0f09c20 @uri=#<URI::GID gid://blog-app/User/2>>}, :args=>[]}
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms (ActiveRecord: 0.7ms | Allocations: 51678)
+
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [341e1627-c372-4f07-8378-bf5810a17fb2]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [341e1627-c372-4f07-8378-bf5810a17fb2] Performing ActionMailer::MailDeliveryJob (Job ID: 341e1627-c372-4f07-8378-bf5810a17fb2) from Async(default) enqueued at 2023-04-28T19:03:33Z with arguments: "PasswordMailer", "reset", "deliver_now", {:params=>{:user=>#<GlobalID:0x00007fd4d0f1a070 @uri=#<URI::GID gid://blog-app/User/2>>}, :args=>[]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [341e1627-c372-4f07-8378-bf5810a17fb2]   Rendering layout layouts/mailer.html.erb
+[ActiveJob] [ActionMailer::MailDeliveryJob] [341e1627-c372-4f07-8378-bf5810a17fb2]   Rendering password_mailer/reset.html.erb within layouts/mailer
+Started GET "/" for ::1 at 2023-04-29 00:33:33 +0530
+[ActiveJob] [ActionMailer::MailDeliveryJob] [341e1627-c372-4f07-8378-bf5810a17fb2]   Rendered password_mailer/reset.html.erb within layouts/mailer (Duration: 0.7ms | Allocations: 1282)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [341e1627-c372-4f07-8378-bf5810a17fb2]   Rendered layout layouts/mailer.html.erb (Duration: 0.9ms | Allocations: 1554)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [341e1627-c372-4f07-8378-bf5810a17fb2] PasswordMailer#reset: processed outbound mail in 3.7ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [341e1627-c372-4f07-8378-bf5810a17fb2] Error performing ActionMailer::MailDeliveryJob (Job ID: 341e1627-c372-4f07-8378-bf5810a17fb2) from Async(default) in 7.89ms: ActionView::Template::Error (Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true):
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionpack-7.0.4.3/lib/action_dispatch/http/url.rb:64:in `full_url_for'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionpack-7.0.4.3/lib/action_dispatch/http/url.rb:54:in `url_for'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionpack-7.0.4.3/lib/action_dispatch/routing/route_set.rb:334:in `block in <class:RouteSet>'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionpack-7.0.4.3/lib/action_dispatch/routing/route_set.rb:846:in `url_for'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionpack-7.0.4.3/lib/action_dispatch/routing/route_set.rb:271:in `call'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionpack-7.0.4.3/lib/action_dispatch/routing/route_set.rb:214:in `call'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionpack-7.0.4.3/lib/action_dispatch/routing/route_set.rb:327:in `block in define_url_helper'
+/home/nitesh/deoghar_nitesh/blog_app/app/views/password_mailer/reset.html.erb:4:in `_app_views_password_mailer_reset_html_erb___2285094437337712612_23980'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/base.rb:244:in `public_send'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/base.rb:244:in `_run'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/template.rb:157:in `block in render'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/notifications.rb:208:in `instrument'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/template.rb:361:in `instrument_render_template'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/template.rb:155:in `render'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/renderer/template_renderer.rb:65:in `block (2 levels) in render_template'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/notifications.rb:206:in `block in instrument'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/notifications.rb:206:in `instrument'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/renderer/template_renderer.rb:60:in `block in render_template'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/renderer/template_renderer.rb:75:in `block in render_with_layout'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/notifications.rb:206:in `block in instrument'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/notifications.rb:206:in `instrument'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/renderer/template_renderer.rb:74:in `render_with_layout'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/renderer/template_renderer.rb:59:in `render_template'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/renderer/template_renderer.rb:11:in `render'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/renderer/renderer.rb:61:in `render_template_to_object'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/renderer/renderer.rb:29:in `render_to_object'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/rendering.rb:117:in `block in _render_template'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/base.rb:270:in `in_rendering_context'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/rendering.rb:116:in `_render_template'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/rendering.rb:103:in `render_to_body'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionpack-7.0.4.3/lib/abstract_controller/rendering.rb:25:in `render'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionmailer-7.0.4.3/lib/action_mailer/base.rb:992:in `block in collect_responses_from_templates'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionmailer-7.0.4.3/lib/action_mailer/base.rb:989:in `each'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionmailer-7.0.4.3/lib/action_mailer/base.rb:989:in `each'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionmailer-7.0.4.3/lib/action_mailer/base.rb:989:in `map'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionmailer-7.0.4.3/lib/action_mailer/base.rb:989:in `collect_responses_from_templates'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionmailer-7.0.4.3/lib/action_mailer/base.rb:967:in `collect_responses'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionmailer-7.0.4.3/lib/action_mailer/base.rb:875:in `mail'
+/home/nitesh/deoghar_nitesh/blog_app/app/mailers/password_mailer.rb:6:in `reset'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionpack-7.0.4.3/lib/abstract_controller/base.rb:215:in `process_action'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionpack-7.0.4.3/lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actiontext-7.0.4.3/lib/action_text/rendering.rb:20:in `with_renderer'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actiontext-7.0.4.3/lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:127:in `instance_exec'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:138:in `run_callbacks'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionpack-7.0.4.3/lib/abstract_controller/callbacks.rb:233:in `process_action'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionpack-7.0.4.3/lib/abstract_controller/base.rb:151:in `process'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionmailer-7.0.4.3/lib/action_mailer/rescuable.rb:25:in `block in process'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionmailer-7.0.4.3/lib/action_mailer/rescuable.rb:17:in `handle_exceptions'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionmailer-7.0.4.3/lib/action_mailer/rescuable.rb:24:in `process'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionview-7.0.4.3/lib/action_view/rendering.rb:39:in `process'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionmailer-7.0.4.3/lib/action_mailer/base.rb:646:in `block in process'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/notifications.rb:206:in `block in instrument'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/notifications.rb:206:in `instrument'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionmailer-7.0.4.3/lib/action_mailer/base.rb:645:in `process'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionmailer-7.0.4.3/lib/action_mailer/parameterized.rb:136:in `block in processed_mailer'
+<internal:kernel>:90:in `tap'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionmailer-7.0.4.3/lib/action_mailer/parameterized.rb:134:in `processed_mailer'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionmailer-7.0.4.3/lib/action_mailer/message_delivery.rb:118:in `deliver_now'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/actionmailer-7.0.4.3/lib/action_mailer/mail_delivery_job.rb:23:in `perform'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/execution.rb:59:in `block in _perform_job'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/i18n-1.13.0/lib/i18n.rb:322:in `with_locale'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/translation.rb:9:in `block (2 levels) in <module:Translation>'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:127:in `instance_exec'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/core_ext/time/zones.rb:66:in `use_zone'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/timezones.rb:9:in `block (2 levels) in <module:Timezones>'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:127:in `instance_exec'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:138:in `run_callbacks'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/execution.rb:58:in `_perform_job'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/instrumentation.rb:20:in `_perform_job'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/execution.rb:46:in `perform_now'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/instrumentation.rb:14:in `block in perform_now'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/instrumentation.rb:25:in `block in instrument'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/notifications.rb:206:in `block in instrument'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/notifications.rb:206:in `instrument'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/instrumentation.rb:35:in `instrument'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/instrumentation.rb:14:in `perform_now'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/logging.rb:18:in `block in perform_now'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:37:in `tagged'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/tagged_logging.rb:99:in `tagged'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/logging.rb:25:in `tag_logger'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/logging.rb:18:in `perform_now'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/execution.rb:24:in `block in execute'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/railtie.rb:54:in `block (4 levels) in <class:Railtie>'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/execution_wrapper.rb:92:in `wrap'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/reloader.rb:72:in `block in wrap'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/execution_wrapper.rb:92:in `wrap'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/reloader.rb:71:in `wrap'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/railtie.rb:53:in `block (3 levels) in <class:Railtie>'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:127:in `instance_exec'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activesupport-7.0.4.3/lib/active_support/callbacks.rb:138:in `run_callbacks'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/execution.rb:22:in `execute'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/activejob-7.0.4.3/lib/active_job/queue_adapters/async_adapter.rb:70:in `perform'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+/home/nitesh/.rvm/gems/ruby-3.0.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+Processing by WelcomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 2467)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 3113)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 00:34:04 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
