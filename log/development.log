@@ -395,3 +395,2935 @@ Started GET "/service-worker.js" for ::1 at 2023-04-29 00:34:04 +0530
   
 ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
   
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-04-29 09:27:34 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1892)
+  Rendered layout layouts/application.html.erb (Duration: 709.1ms | Allocations: 104174)
+Completed 200 OK in 761ms (Views: 723.2ms | ActiveRecord: 0.0ms | Allocations: 111600)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 09:27:37 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 09:27:51 +0530
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 68.3ms | Allocations: 6503)
+  Rendered layout layouts/application.html.erb (Duration: 76.8ms | Allocations: 8925)
+Completed 200 OK in 85ms (Views: 82.4ms | ActiveRecord: 0.0ms | Allocations: 10149)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 09:28:22 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started POST "/sign_in" for ::1 at 2023-04-29 09:50:53 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@example.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+Completed   in 817211ms (ActiveRecord: 0.0ms | Allocations: 203611)
+
+
+Started GET "/sign_up" for ::1 at 2023-04-29 10:05:01 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrationsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 47ms (ActiveRecord: 1.3ms | Allocations: 7074)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms | Allocations: 1168)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms | Allocations: 937)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms | Allocations: 921)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms | Allocations: 915)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms | Allocations: 933)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms | Allocations: 935)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms | Allocations: 921)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms | Allocations: 921)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms | Allocations: 931)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 0.3ms | Allocations: 927)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms | Allocations: 947)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.5ms | Allocations: 927)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms | Allocations: 929)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms | Allocations: 925)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms | Allocations: 933)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms | Allocations: 931)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms | Allocations: 935)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms | Allocations: 923)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:02 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 927)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:03 +0530
+Processing by SessionsController#new as HTML
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:05:03 +0530
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 1105)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:03 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms | Allocations: 2056)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:03 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1125)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:03 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 925)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:03 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 929)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:03 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 935)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:03 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 921)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:03 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 929)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:03 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 933)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:03 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 917)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:04 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 931)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:04 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 921)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:04 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 927)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:04 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 921)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:04 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 935)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:04 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 941)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:04 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 923)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:04 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 935)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:04 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 929)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:04 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 919)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:05:05 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 930)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 925)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 931)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 929)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 925)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 929)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 929)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 933)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 919)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 925)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 925)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 931)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 931)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 11ms (ActiveRecord: 0.1ms | Allocations: 925)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 926)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 933)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 923)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms | Allocations: 939)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 921)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:05:09 +0530
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:10:in `authenticate'
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 921)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:05:10 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_up" for ::1 at 2023-04-29 10:05:24 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 17.0ms | Allocations: 4183)
+  Rendered layout layouts/application.html.erb (Duration: 157.8ms | Allocations: 39052)
+Completed 200 OK in 228ms (Views: 165.9ms | ActiveRecord: 1.4ms | Allocations: 62405)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:05:26 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_up" for ::1 at 2023-04-29 10:05:29 +0530
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 961)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 3298)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 3898)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:05:31 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started POST "/sign_up" for ::1 at 2023-04-29 10:05:46 +0530
+Processing by RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/registrations_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:9:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "admin@example.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-04-29 04:35:46.955119"], ["updated_at", "2023-04-29 04:35:46.955119"]]
+  ↳ app/controllers/registrations_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (235.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/registrations_controller.rb:9:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering welcome_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered welcome_mailer/welcome_email.html.erb within layouts/mailer (Duration: 1.6ms | Allocations: 239)
+  Rendered layout layouts/mailer.html.erb (Duration: 3.9ms | Allocations: 488)
+  Rendering layout layouts/mailer.text.erb
+  Rendering welcome_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered welcome_mailer/welcome_email.text.erb within layouts/mailer (Duration: 1.6ms | Allocations: 172)
+  Rendered layout layouts/mailer.text.erb (Duration: 3.4ms | Allocations: 365)
+WelcomeMailer#welcome_email: processed outbound mail in 80.3ms
+Delivered mail 644c9ea371bad_457334d0440ba@dell-Latitude-3400.mail (1930.8ms)
+Date: Sat, 29 Apr 2023 10:05:47 +0530
+From: from@example.com
+To: admin@example.com
+Message-ID: <644c9ea371bad_457334d0440ba@dell-Latitude-3400.mail>
+Subject: Welcome to my Website
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_644c9ea36b094_457334d043979";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_644c9ea36b094_457334d043979
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, admin@example.com
+  ===============================================
+  You have successfully signed up to example.com,
+  your user email is: admin@example.com.
+  To login to the site, just follow this link: http://localhost:3000/sign_in.
+  Thanks for joining and have a great day!
+
+----==_mimepart_644c9ea36b094_457334d043979
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+  <html>
+    <head>
+      <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    </head>
+    <body>
+      <h1>Welcome to example.com, admin@example.com</h1>
+      <p>
+        You have successfully signed up to example.com,
+        your user email is: admin@example.com.<br>
+      </p>
+      <p>
+        To login to the site, just follow this link: http://localhost:3000/sign_in.
+      </p>
+      <p>Thanks for joining and have a great day!</p>
+    </body>
+  </html>
+  </body>
+</html>
+
+----==_mimepart_644c9ea36b094_457334d043979--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2878ms (ActiveRecord: 235.5ms | Allocations: 77791)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:05:49 +0530
+Processing by WelcomeController#index as TURBO_STREAM
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 610)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 3040)
+Completed 200 OK in 37ms (Views: 21.7ms | ActiveRecord: 0.6ms | Allocations: 6411)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:06:20 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/" for ::1 at 2023-04-29 10:08:26 +0530
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 620)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 3303)
+Completed 200 OK in 35ms (Views: 26.0ms | ActiveRecord: 0.5ms | Allocations: 5096)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:08:28 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:08:57 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/" for ::1 at 2023-04-29 10:10:10 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1074)
+  Rendered layout layouts/application.html.erb (Duration: 67.6ms | Allocations: 35354)
+Completed 200 OK in 108ms (Views: 72.3ms | ActiveRecord: 0.9ms | Allocations: 62163)
+
+
+Started DELETE "/logout" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms | Allocations: 1177)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by WelcomeController#index as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 400)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 389)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 391)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 383)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 397)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 381)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 389)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 393)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 369)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 381)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 381)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 381)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 381)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:10:12 +0530
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 642)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 463)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 371)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 385)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:12 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 373)
+
+
+Started DELETE "/logout" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 466)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 397)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 371)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 379)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 379)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 385)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 389)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 383)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 393)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 387)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 385)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 383)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 387)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 383)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 389)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 387)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 391)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 385)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:10:21 +0530
+Processing by SessionsController#new as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 381)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:10:52 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/" for ::1 at 2023-04-29 10:11:00 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1766)
+  Rendered layout layouts/application.html.erb (Duration: 151.7ms | Allocations: 36620)
+Completed 200 OK in 194ms (Views: 161.2ms | ActiveRecord: 0.0ms | Allocations: 43058)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:11:03 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/" for ::1 at 2023-04-29 10:11:04 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2466)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 3037)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:11:06 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 78)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2294)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 2776)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:11:06 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/" for ::1 at 2023-04-29 10:11:07 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 78)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2294)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 2772)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:11:07 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2291)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2765)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:11:07 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2291)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 2765)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:11:08 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 78)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2301)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 2781)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:11:08 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2293)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 2765)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:11:08 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2297)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 2775)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:11:08 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2291)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 2769)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:11:08 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2291)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 2765)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:11:10 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_up" for ::1 at 2023-04-29 10:11:11 +0530
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3487)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 5924)
+Completed 200 OK in 91ms (Views: 13.2ms | ActiveRecord: 3.5ms | Allocations: 23811)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:11:16 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 81)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 2302)
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 2854)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:11:18 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by WelcomeController#index as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 633)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 501)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 388)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 386)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 372)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 392)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 386)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 386)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 376)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 376)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 378)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 374)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 380)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 376)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 392)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 374)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 380)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 390)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 382)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:28 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 386)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:29 +0530
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:11:29 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 5ms (Allocations: 392)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:29 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 602)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:30 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 402)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:30 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 380)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:30 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 388)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:30 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 386)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:30 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 404)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:30 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 376)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:30 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 376)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:30 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 380)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:30 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 384)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:30 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 380)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:30 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 366)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:30 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 376)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:30 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 370)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:30 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 388)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:30 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 388)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:30 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 374)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:30 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 372)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:11:31 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 386)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 382)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 394)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (Allocations: 380)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 5ms (Allocations: 394)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (Allocations: 394)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 388)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 368)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 388)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 384)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 392)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 372)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 374)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 378)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (Allocations: 382)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 378)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 376)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 384)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 382)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:32 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 376)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:33 +0530
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:11:33 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 6ms (Allocations: 392)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:33 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 390)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 386)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 370)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 374)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 388)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 390)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 382)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (Allocations: 386)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 388)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 5ms (Allocations: 390)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 382)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 374)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 386)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 374)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 384)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 388)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 374)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 380)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:34 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 382)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by WelcomeController#index as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:11:35 +0530
+Completed 302 Found in 5ms (Allocations: 549)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 956)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 382)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 384)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 378)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 386)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 388)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 376)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 386)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 388)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 380)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 394)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 384)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 380)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 384)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 382)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 384)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 386)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 398)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:35 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (Allocations: 372)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:36 +0530
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:11:36 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 5ms (Allocations: 390)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 384)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (Allocations: 382)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 388)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 372)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (Allocations: 376)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 370)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 388)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (Allocations: 386)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 388)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 380)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 392)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (Allocations: 378)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 386)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 7ms (Allocations: 388)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 5ms (Allocations: 382)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 384)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 382)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 382)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:37 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 394)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:11:38 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:42 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 378)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:42 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 384)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:42 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (Allocations: 366)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:42 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 382)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:42 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 378)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:42 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 370)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:42 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 380)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:42 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 378)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:43 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 376)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:43 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 384)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:43 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (Allocations: 392)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:43 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 386)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:43 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 382)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:43 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (Allocations: 382)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:43 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (Allocations: 374)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:43 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 370)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:43 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 376)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:43 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 372)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:43 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 376)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:11:43 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (Allocations: 406)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:11:44 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:12:00 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 5237)
+  Rendered layout layouts/application.html.erb (Duration: 66.7ms | Allocations: 39866)
+Completed 200 OK in 83ms (Views: 70.2ms | ActiveRecord: 0.0ms | Allocations: 46295)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:12:02 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:12:32 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/" for ::1 at 2023-04-29 10:16:34 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms | Allocations: 3528)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:16:34 +0530
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 12.4ms | Allocations: 5187)
+  Rendered layout layouts/application.html.erb (Duration: 103.9ms | Allocations: 39746)
+Completed 200 OK in 115ms (Views: 109.4ms | ActiveRecord: 0.0ms | Allocations: 43337)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:16:36 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:17:05 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:18:22 +0530
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 2744)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 5426)
+Completed 200 OK in 31ms (Views: 27.0ms | ActiveRecord: 0.0ms | Allocations: 6726)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:18:24 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_up" for ::1 at 2023-04-29 10:18:27 +0530
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1572)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 3998)
+Completed 200 OK in 71ms (Views: 22.7ms | ActiveRecord: 2.9ms | Allocations: 22260)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:18:58 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_up" for ::1 at 2023-04-29 10:19:18 +0530
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1399)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 4081)
+Completed 200 OK in 39ms (Views: 32.9ms | ActiveRecord: 0.0ms | Allocations: 5405)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:19:20 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_up" for ::1 at 2023-04-29 10:19:45 +0530
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 10.0ms | Allocations: 1398)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 4081)
+Completed 200 OK in 33ms (Views: 29.9ms | ActiveRecord: 0.0ms | Allocations: 5423)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:19:47 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_up" for ::1 at 2023-04-29 10:20:04 +0530
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1397)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 4079)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 5407)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:20:06 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:20:36 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_up" for ::1 at 2023-04-29 10:20:41 +0530
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1397)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4079)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 5346)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:20:42 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:20:46 +0530
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2738)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 5163)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 6274)
+
+
+Started GET "/password/reset" for ::1 at 2023-04-29 10:20:54 +0530
+Processing by PasswordResetsController#new as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 483)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:20:54 +0530
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2331)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 4650)
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 5194)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:21:25 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:32:33 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 5283)
+  Rendered layout layouts/application.html.erb (Duration: 73.9ms | Allocations: 39567)
+Completed 200 OK in 94ms (Views: 78.4ms | ActiveRecord: 0.0ms | Allocations: 45968)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:32:35 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/password/reset" for ::1 at 2023-04-29 10:32:36 +0530
+Processing by PasswordResetsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1640)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 4066)
+Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 5342)
+
+
+Started POST "/password/reset" for ::1 at 2023-04-29 10:32:40 +0530
+Processing by PasswordResetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "commit"=>"Reset Password"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:23:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 1.6ms | Allocations: 4524)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:32:40 +0530
+Processing by WelcomeController#index as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 590)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:32:40 +0530
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2331)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 4650)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 5256)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:33:11 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:34:22 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 23.0ms | Allocations: 5283)
+  Rendered layout layouts/application.html.erb (Duration: 190.0ms | Allocations: 40144)
+Completed 200 OK in 233ms (Views: 200.4ms | ActiveRecord: 0.0ms | Allocations: 46551)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:34:25 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/password/reset" for ::1 at 2023-04-29 10:34:25 +0530
+Processing by PasswordResetsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1640)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 4066)
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.0ms | Allocations: 5356)
+
+
+Started POST "/password/reset" for ::1 at 2023-04-29 10:34:27 +0530
+Processing by PasswordResetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "commit"=>"Reset Password"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:23:in `create'
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 23ms (ActiveRecord: 1.5ms | Allocations: 4519)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:34:27 +0530
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2330)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 4651)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 5286)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:34:58 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:35:22 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 9.1ms | Allocations: 5283)
+  Rendered layout layouts/application.html.erb (Duration: 80.3ms | Allocations: 39811)
+Completed 200 OK in 98ms (Views: 84.0ms | ActiveRecord: 0.0ms | Allocations: 46222)
+
+
+Started GET "/password/reset" for ::1 at 2023-04-29 10:35:24 +0530
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:35:24 +0530
+Processing by PasswordResetsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1649)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 4105)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.0ms | Allocations: 5407)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started POST "/password/reset" for ::1 at 2023-04-29 10:35:27 +0530
+Processing by PasswordResetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "commit"=>"Reset Password"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:23:in `create'
+No template found for PasswordResetsController#create, rendering head :no_content
+Completed 204 No Content in 29ms (ActiveRecord: 1.7ms | Allocations: 4740)
+
+
+Started POST "/password/reset" for ::1 at 2023-04-29 10:35:29 +0530
+Processing by PasswordResetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "commit"=>"Reset Password"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:23:in `create'
+No template found for PasswordResetsController#create, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 0.3ms | Allocations: 915)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:36:00 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/" for ::1 at 2023-04-29 10:36:24 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms | Allocations: 3526)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:36:24 +0530
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 5233)
+  Rendered layout layouts/application.html.erb (Duration: 82.7ms | Allocations: 39900)
+Completed 200 OK in 92ms (Views: 86.8ms | ActiveRecord: 0.0ms | Allocations: 43495)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:36:26 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/password/reset" for ::1 at 2023-04-29 10:36:26 +0530
+Processing by PasswordResetsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1640)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 4065)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 5349)
+
+
+Started POST "/password/reset" for ::1 at 2023-04-29 10:36:27 +0530
+Processing by PasswordResetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "commit"=>"Reset Password"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:23:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1286)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 3589)
+Completed 200 OK in 37ms (Views: 15.8ms | ActiveRecord: 1.6ms | Allocations: 8261)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:36:58 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:37:49 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 5283)
+  Rendered layout layouts/application.html.erb (Duration: 78.5ms | Allocations: 40182)
+Completed 200 OK in 94ms (Views: 82.3ms | ActiveRecord: 0.0ms | Allocations: 46585)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:37:51 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/password/reset" for ::1 at 2023-04-29 10:37:51 +0530
+Processing by PasswordResetsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1640)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 4066)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 5342)
+
+
+Started POST "/password/reset" for ::1 at 2023-04-29 10:37:53 +0530
+Processing by PasswordResetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "commit"=>"Reset Password"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:23:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1287)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 3605)
+Completed 200 OK in 37ms (Views: 15.7ms | ActiveRecord: 1.6ms | Allocations: 8265)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:38:24 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/password/reset" for ::1 at 2023-04-29 10:41:02 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PasswordResetsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 4005)
+  Rendered layout layouts/application.html.erb (Duration: 77.3ms | Allocations: 38350)
+Completed 200 OK in 95ms (Views: 82.6ms | ActiveRecord: 0.0ms | Allocations: 44761)
+
+
+Started POST "/password/reset" for ::1 at 2023-04-29 10:41:04 +0530
+Processing by PasswordResetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "commit"=>"Reset Password"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:23:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1287)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3598)
+Completed 200 OK in 15ms (Views: 7.7ms | ActiveRecord: 0.5ms | Allocations: 8284)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:43:06 +0530
+Processing by WelcomeController#index as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 610)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:43:06 +0530
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2890)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5340)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 6619)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:43:08 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:43:24 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 16.9ms | Allocations: 5283)
+  Rendered layout layouts/application.html.erb (Duration: 150.3ms | Allocations: 39712)
+Completed 200 OK in 187ms (Views: 159.1ms | ActiveRecord: 0.0ms | Allocations: 46113)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:43:26 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:43:56 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started POST "/sign_in" for ::1 at 2023-04-29 10:44:18 +0530
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@example.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2240)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 4557)
+Completed 200 OK in 475ms (Views: 6.4ms | ActiveRecord: 2.0ms | Allocations: 24721)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:44:45 +0530
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2265)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 4474)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 5021)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:44:48 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:45:17 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:46:45 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 23.8ms | Allocations: 5283)
+  Rendered layout layouts/application.html.erb (Duration: 185.8ms | Allocations: 39889)
+Completed 200 OK in 226ms (Views: 195.3ms | ActiveRecord: 0.0ms | Allocations: 46304)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:46:48 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started POST "/sign_in" for ::1 at 2023-04-29 10:46:48 +0530
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@example.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2240)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 4557)
+Completed 200 OK in 530ms (Views: 6.6ms | ActiveRecord: 2.8ms | Allocations: 24752)
+
+
+Started POST "/sign_in" for ::1 at 2023-04-29 10:46:55 +0530
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@example.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 468ms (ActiveRecord: 0.3ms | Allocations: 1055)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:46:55 +0530
+Processing by WelcomeController#index as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 1347)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:46:55 +0530
+Processing by SessionsController#new as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2260)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 4579)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 6300)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:47:30 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 18.2ms | Allocations: 5260)
+  Rendered layout layouts/application.html.erb (Duration: 187.0ms | Allocations: 40101)
+Completed 200 OK in 292ms (Views: 197.3ms | ActiveRecord: 2.3ms | Allocations: 66833)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:47:32 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started POST "/sign_in" for ::1 at 2023-04-29 10:47:41 +0530
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@example.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 457ms (ActiveRecord: 0.8ms | Allocations: 1844)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:47:42 +0530
+Processing by WelcomeController#index as TURBO_STREAM
+Completed   in 102699ms (ActiveRecord: 0.0ms | Allocations: 199550)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:49:32 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 5260)
+  Rendered layout layouts/application.html.erb (Duration: 74.6ms | Allocations: 39917)
+Completed 200 OK in 110ms (Views: 78.7ms | ActiveRecord: 0.9ms | Allocations: 66665)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:49:34 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started POST "/sign_in" for ::1 at 2023-04-29 10:49:38 +0530
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@example.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 463ms (ActiveRecord: 0.8ms | Allocations: 1843)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:49:39 +0530
+Processing by WelcomeController#index as TURBO_STREAM
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 635)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3064)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 4929)
+
+
+Started GET "/password" for ::1 at 2023-04-29 10:49:53 +0530
+Processing by PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/edit.html.erb within layouts/application
+  Rendered passwords/edit.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1320)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 3730)
+Completed 200 OK in 25ms (Views: 18.8ms | ActiveRecord: 0.3ms | Allocations: 5563)
+
+
+Started DELETE "/logout" for ::1 at 2023-04-29 10:50:02 +0530
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 971)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:50:02 +0530
+Processing by WelcomeController#index as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 409)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:50:02 +0530
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2271)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 4477)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 4990)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:50:18 +0530
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2367)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 16148)
+Completed 200 OK in 23ms (Views: 22.4ms | Allocations: 17274)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:50:19 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started POST "/sign_in" for ::1 at 2023-04-29 10:50:20 +0530
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@example.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2313)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 4620)
+Completed 200 OK in 485ms (Views: 6.9ms | ActiveRecord: 3.5ms | Allocations: 8917)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:50:51 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/sign_in" for ::1 at 2023-04-29 10:57:33 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 5629)
+  Rendered layout layouts/application.html.erb (Duration: 78.6ms | Allocations: 40224)
+Completed 200 OK in 89ms (Views: 81.9ms | ActiveRecord: 0.0ms | Allocations: 46273)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:57:35 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started POST "/sign_in" for ::1 at 2023-04-29 10:57:40 +0530
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@example.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 500ms (ActiveRecord: 2.3ms | Allocations: 20020)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:57:40 +0530
+Processing by WelcomeController#index as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:12:in `authenticate'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 635)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3065)
+Completed 200 OK in 15ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 6325)
+
+
+Started GET "/password" for ::1 at 2023-04-29 10:57:45 +0530
+Processing by PasswordsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/authentication.rb:12:in `authenticate'
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/edit.html.erb within layouts/application
+  Rendered passwords/edit.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1320)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 3730)
+Completed 200 OK in 32ms (Views: 25.5ms | ActiveRecord: 0.4ms | Allocations: 5459)
+
+
+Started DELETE "/logout" for ::1 at 2023-04-29 10:57:48 +0530
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 458)
+
+
+Started GET "/" for ::1 at 2023-04-29 10:57:48 +0530
+Processing by WelcomeController#index as TURBO_STREAM
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 403)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:57:49 +0530
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2443)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 4649)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 4986)
+
+
+Started GET "/sign_in" for ::1 at 2023-04-29 10:57:51 +0530
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 9.1ms | Allocations: 2429)
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 4631)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms | Allocations: 4945)
+
+
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:57:53 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/service-worker.js" for ::1 at 2023-04-29 10:58:22 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
