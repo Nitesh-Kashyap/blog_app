@@ -1,5 +1,5 @@
 <h1>Sign Up</h1>
-<%= form_with model: @user, url: sign_up_path do |f| %>
+<%= form_with model: @user, url: register_path do |f| %>
 <p>
   <%= f.label 'email' %><br>
   <%= f.text_field :email %>
@@ -18,4 +18,4 @@
 <% end %>
 
 <span>or Already have an account,</span>
-<%= link_to 'Sign In here', sign_in_path %>
+<%= link_to 'Sign In here', login_path %>

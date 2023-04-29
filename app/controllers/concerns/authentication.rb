@@ -11,7 +11,7 @@ module Authentication
         # finds user with session data and stores it if present
         Current.user = User.find_by(id: session[:user_id]) if session[:user_id]
       else
-        redirect_to sign_in_url, notice: 'Please sign in to continue!'
+        redirect_to login_url, notice: 'Please sign in to continue!'
       end
     end
 end
