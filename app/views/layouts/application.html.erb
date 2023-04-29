@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>BlogApp</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>BlogApp</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+</head>
 
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
-  </body>
+<body>
+  <% if Current.user %>
+  <h3> Logged in as: <%= Current.user.email %> <%= link_to 'Edit Password', edit_password_path %> </h3>
+  <%= button_to 'Logout', logout_path, method: :delete %>
+  <% end %>
+
+  <hr>
+  <p style="color: green"><%= notice %></p>
+  <p style="color: red"><%= alert %></p>
+  <%= yield %>
+</body>
 </html>
